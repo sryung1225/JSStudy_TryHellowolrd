@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+        var str="abcdeabcde";
+        
+        console.log(str.charAt(0)); //a
+        console.log(str.length); //10
+        console.log(str.charAt(9)); //e
+        console.log(str.charAt(10)); //
+        console.log(str.charAt(-1)); //
+        
+        console.log(str[1]); //b
+        console.log(str[10]); //undefined
+        console.log(str[-1]); //undefined
+        
+        console.log(str.charAt(str.length-5)); //a
+        
+        
+        console.log(str.substring(2, 4)); //cd
+        console.log(str.substr(2, 4)); //cdea
+        
+        console.log(str.substring(2)); //cdeabcde
+        console.log(str.substr(2)); //cdeabcde
+        
+        console.log(str.substr(-7)); // deabcde
+        console.log(str.substr(-7, 2)); //de
+        
+        
+        console.log(str.indexOf("bc")); //1
+        console.log(str.lastIndexOf("bc")); //6
+        console.log(str.lastIndexOf("f")); //-1 (없는 문자열의 경우 -1 반환)
+    </script>
+  </head>
+  <body>
+    This is a basic HTML page
+  </body>
+</html>

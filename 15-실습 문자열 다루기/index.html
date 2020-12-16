@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            function firstLetter(str) { //첫 번째 문자 반환
+                return str.charAt(0);
+            }
+
+            function firstLetters1(str) { //첫 두 문자를 문자열로 반환 1
+                return str.substr(0, 2);
+            }
+
+            function firstLetters2(str) { //첫 두 문자를 문자열로 반환 2
+                return str.substring(0, 2);
+            }
+
+            var sentence = "HiHello";
+
+            var quiz1 = firstLetter(sentence);
+            var quiz2 = firstLetters1(sentence);
+            var quiz3 = firstLetters2(sentence);
+            console.log(quiz1); //H
+            console.log(quiz2); //Hi
+            console.log(quiz3); //Hi
+
+            document.write(firstLetter(sentence)+"<br>"); //H
+            document.write(firstLetters1(sentence)+"<br>"); //Hi
+            document.write(firstLetters2(sentence)+"<br>"); //Hi
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
