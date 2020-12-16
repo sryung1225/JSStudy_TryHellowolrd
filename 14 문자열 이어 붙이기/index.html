@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+        var str = "Hello";
+        console.log(str.length); //5
+        console.log(str["length"]); //5
+        console.log("Hello".length); //5
+        
+        var str2 = "World";
+        console.log(str.concat(str2)); //HelloWorld
+        console.log(str); //Hello
+        
+        var str3 = str.concat(str2);
+        console.log(str3); //HelloWorld
+        
+        console.log(str.concat(str2).concat("!")); //HelloWorld!
+        console.log("Hello".concat("World").concat("!")); //HelloWorld!
+        
+        console.log(str+str2); //HelloWorld
+        console.log("Hello"+"World"); //HelloWorld
+        console.log("Pi is "+3.14); //Pi is 3.14
+        console.log(3.14+" is Pi"); //3.14 is Pi
+        console.log(3.14+" is Pi"); //3.14 is Pi
+    </script>
+  </head>
+  <body>
+    This is a basic HTML page
+  </body>
+</html>
