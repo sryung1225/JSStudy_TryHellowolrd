@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            var age = 25;
+            if(age < 20) {
+                console.log("20세 미만입니다.");
+            } else {
+                console.log("20세 이상입니다.");
+            }
+            //20세 이상입니다.
+            
+            function is20s(age){
+                //age가 20 이상이고 30 미만이면 20대
+                if(20 <= age && 30 > age){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            console.log(is20s(31)); //false
+            
+            function isLeapYear(year){
+                if (year%4 == 0){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            console.log(isLeapYear(2020)); //true
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
