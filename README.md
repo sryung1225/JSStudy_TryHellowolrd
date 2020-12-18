@@ -38,12 +38,12 @@
 - [x] 18 주석 사용하기
 
 **Part 8 조건문**<br>
-- [ ] 19 조건문
-- [ ] 20 switch 조건문
+- [x] 19 조건문
+- [x] 20 switch 조건문
 
 **Part 9 반복문**<br>
-- [ ] 21 while 반복문
-- [ ] 22 do while 반복문
+- [x] 21 while 반복문
+- [x] 22 do while 반복문
 - [ ] 23 for 반복문
 - [ ] 24 for in 반복문
 

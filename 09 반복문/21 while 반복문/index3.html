@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            // 문제 다양성을 위해 난수 설정 추가
+            // Math.random() 함수에 10을 곱해서 0~10 사이의 실수를 만들고
+            // Math.ceil() 함수를 이용ㅎ 0~10 사이의 정수를 생성
+            
+            var ans;
+            var count = 0;
+            
+            while (count < 3){
+                var a = Math.ceil(Math.random()*10);
+                var b = Math.ceil(Math.random()*10);
+                var solution = a+b;
+                
+                ans = parseInt(prompt(a + "+" + b + "=?"));
+                
+                if (ans != solution) {
+                    console.log("답은 " + ans + "가 아닙니다");
+                } else {
+                    console.log("답은 " + ans + "가 맞습니다");
+                    count++;
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
