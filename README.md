@@ -44,8 +44,8 @@
 **Part 9 반복문**<br>
 - [x] 21 while 반복문
 - [x] 22 do while 반복문
-- [ ] 23 for 반복문
-- [ ] 24 for in 반복문
+- [x] 23 for 반복문
+- [x] 24 for in 반복문
 
 **Part 10 더 알아보기**<br>
 - [ ] 25 변수의 유효 범위
