@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            //변수의 유효 범위 : 선언한 변수가 어느 위치에서 유효한지를 말함
+            
+            function a(){
+                var v_a = "a";
+                
+                function b(){
+                    var v_b = "b";
+                    console.log("b: ", typeof(v), typeof(v_a), typeof(v_b));
+                }
+                
+                b();
+                console.log("a: ", typeof(v), typeof(v_a), typeof(v_b));
+            }
+            
+            var v = "v";
+            a();
+            console.log("o: ", typeof(v), typeof(v_a), typeof(v_b));
+            
+            // b: string string string
+            // a: string string undefined
+            // o: string undefined undefined
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

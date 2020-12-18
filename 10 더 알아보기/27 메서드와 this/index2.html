@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            function f(){
+                console.log(this);
+                console.log("f is called");
+            }
+            function setName(name){
+                this.name = name;
+            }
+            var o = {name: "object", method: f, setName: setName};
+            var o2 = {name: "", setName: setName};
+            
+            o.setName("object1");
+            o2.setName("object2");
+            
+            console.log(o, o2);
+            //{name: "object1", method: ƒ, setName: ƒ}
+            //{name: "object2", setName: ƒ}
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

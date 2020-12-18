@@ -1,0 +1,44 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            // 변수 가림 현상 : 셰도잉 효과
+            
+            function shadowing_example1(){
+                console.log("F", val1);
+                val1++;
+            }
+            var val1 = 0;
+            shadowing_example1();
+            console.log("O", val1);
+            //F 0
+            //O 1
+            
+            function shadowing_example2(){
+                var val2 = 0;
+                console.log("F", val2);
+                val2++;
+            }
+            var val2 = 0;
+            shadowing_example2();
+            console.log("O", val2);
+            //F 0
+            //O 0
+            
+            function shadowing_example3(){
+                var val3 = 5;
+                console.log("F", val3);
+                val3++;
+            }
+            
+            var val3 = 0;
+            shadowing_example3();
+            console.log("O", val3);
+            //F 5
+            //O 0
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

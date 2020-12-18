@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <script>
+            //메서드 : 함수가 객체의 속성 값이 될 경우 그 함수를 메서드라고 함
+            
+            function f() {
+                console.log("f is called");
+            }
+            var O = {name: "object", method: f};
+            f();
+            O.method();
+            //f is called : f()함수
+            //f is called : 객체에 바인드(bind)된 메서드로 호출된 것
+            
+            
+            //this : 예약어
+            //f2()함수가 호출되었을 때 어떤 객체에서 바인드된 속성으로 호출된 것인지를 보여줌
+            function f2(){
+                console.log(this);
+                console.log("f2 is called");
+            }
+            var O2 = {name: "object", method: f2};
+            f2();
+            O2.method();
+            //Window {window: Window, self: Window, document: document, name: "", location: Location, …}
+            //f2 is called
+            //{name: "object", method: ƒ}
+            //f2 is called
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
