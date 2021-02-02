@@ -57,7 +57,7 @@
 
 **Part 11 자바스크립트와 웹**<br>
 - [x] 29 자바스크립트, HTML, CSS
-- [ ] 30 window 객체
+- [x] 30 window 객체
 - [ ] 31 CSS 다루기
 
 **Part 12 DOM + JS**<br>

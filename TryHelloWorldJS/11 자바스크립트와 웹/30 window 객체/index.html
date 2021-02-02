@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+    </body>
+    <script>
+        var a = 1;
+        console.log(a); //1
+        console.log(window.a); //1
+        
+        function b(){
+            console.log("b");
+        }
+        console.log(b); //f b(){console.log("b");}
+        console.log(window.b); //f b(){console.log("b");}
+        console.log(b()); //b undefined
+        
+        console.log(window.location); //Location {ancestorOrigins: DOMStringList, href: "http://127.0.0.1:2526/TryHelloWorldJS/11%20%EC%9E%…9B%B9/30%20window%20%EA%B0%9D%EC%B2%B4/index.html", origin: "http://127.0.0.1:2526", protocol: "http:", host: "127.0.0.1:2526", …}
+        console.log(window.location.href); //http://127.0.0.1:2526/TryHelloWorldJS/11%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80%20%EC%9B%B9/30%20window%20%EA%B0%9D%EC%B2%B4/index.html
+        console.log(window.navigator); //Navigator {vendorSub: "", productSub: "20030107", vendor: "Google Inc.", maxTouchPoints: 0, userActivation: UserActivation, …}
+        console.log(window.screen); //Screen {availWidth: 1920, availHeight: 1040, width: 1920, height: 1080, colorDepth: 24, …}
+        console.log(window.document); //#document
+        
+        console.log(document.body); //<body>...</body>
+        console.log(document.head); //<head>...</head>
+    </script>
+</html>
