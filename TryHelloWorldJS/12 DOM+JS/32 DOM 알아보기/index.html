@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+    </body>
+    <script>
+        console.log(document); //#document
+
+        console.log(document.children); //HTMLCollection [html]
+        
+        console.log(document.children[0]);
+        //<html>
+        //  <head>...</head>
+        //  <body>...</body>
+        //</html>
+        
+        console.log(document.children[0].children[0]);
+        //<head>...</head>
+        console.log(document.children[0].children[1]);
+        //<body>...</body>
+        
+        console.log(document.children[0].children[1].parentNode);
+        //<html>
+        //  <head>...</head>
+        //  <body>...</body>
+        //</html>
+    </script>
+</html>
